@@ -1,0 +1,36 @@
+<n:project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n="http://maven.apache.org/POM/4.0.0"
+		   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<n:modelVersion>4.0.0</n:modelVersion>
+
+	<n:groupId>com.example</n:groupId>
+	<n:artifactId>your-artifact-id</n:artifactId>
+	<n:version>1.0-SNAPSHOT</n:version>
+
+	<n:properties>
+		<n:maven.compiler.source>18</n:maven.compiler.source>
+		<n:maven.compiler.target>18</n:maven.compiler.target>
+		<n:maven.compiler.release>18</n:maven.compiler.release>
+	</n:properties>
+
+	<n:dependencies>
+		<n:dependency>
+			<n:groupId>org.postgresql</n:groupId>
+			<n:artifactId>postgresql</n:artifactId>
+			<n:version>42.2.23</n:version>
+		</n:dependency>
+	</n:dependencies>
+
+	<n:build>
+		<n:plugins>
+			<n:plugin>
+				<n:groupId>org.apache.maven.plugins</n:groupId>
+				<n:artifactId>maven-compiler-plugin</n:artifactId>
+				<n:version>3.8.1</n:version>
+				<n:configuration>
+					<n:source>18</n:source>
+					<n:target>18</n:target>
+				</n:configuration>
+			</n:plugin>
+		</n:plugins>
+	</n:build>
+</n:project>
